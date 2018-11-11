@@ -1,0 +1,154 @@
+body, html{
+height: 100%;
+margin: 0;
+}
+
+body{
+font-family: 'Muli', sans-serif;
+color:#ff3355;
+}
+
+/*header, footer, section, div {
+box-sizing: border-box;
+}**/
+
+.header__title, .card__title{
+padding:10px;
+}
+
+.card__title{
+background-color:#fff;
+color:#ff4d6a;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+
+.header__index{
+background-color:#E56399;
+color:#F4F3EE;
+height:100vh;
+text-align:center;
+}
+
+.header__content{
+align-items:center;
+display:flex;
+flex-direction:column;
+
+}
+
+.card__week1{
+align-items:center;
+display:flex;
+justify-content:center;
+background-color:#F7B2BD;
+border-radius:10px;
+color:#F4F3EE;
+height:50vh;
+width:50%;
+text-align:center;
+flex-direction:column;
+overflow:auto;
+padding:10px;
+font-size:1em;
+}
+
+.main__content{
+align-content:center;
+background-color:#FFE5D9;
+color:#ff4d6a;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.image{
+padding:30px;
+margin:20px;
+border-radius:20px;
+}
+
+.my__pic{
+border-radius:50%;
+height:auto;
+max-width:100%;
+}
+
+.introduction{
+margin:10px;
+padding:20px;
+text-align:center;
+}
+
+.social__media{
+background-color:#E56399;
+display:flex;
+justify-content:space-around;
+margin:10px;
+list-style-type:none;
+}
+
+.fab {
+color:#fff;
+padding: 5px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+
+input[type=text], button {
+border: 1px solid #ccc;
+border-radius: 4px;
+height:auto;
+margin:20px 10px 0 10px;
+width: 50%;
+padding: 12px;
+resize: vertical;
+text-align:center;
+align-self:center;
+font-size:1.5em;
+}
+
+button:hover{
+opacity:0.8;
+
+}
+
+@media only screen and (min-width: 450px) {
+.my__pic{
+max-width:250px;
+height:auto;
+}
+.main__content{
+align-content:center;
+flex-wrap:nowrap;
+justify-content:center;
+}
+
+input[type=text], button {
+font-size:2em;
+}
+
+}
+
+@media only screen and (min-width: 850px) {
+.introduction{
+margin-top:40px;
+}
+.header__index{
+height:60vh;
+
+}
+.card__week1{
+flex-direction:row;
+justify-content:space-evenly;
+height:20vh;
+font-size:2em;
+}
+
+button{
+width:auto;
+}
+}
